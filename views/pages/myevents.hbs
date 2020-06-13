@@ -1,0 +1,15 @@
+<h2>Hey {{name}}! These are your events</h2>
+{{#each data}}
+<div class="card">
+<div class="card-header">
+<div class="card-body">
+    <h5 class="card-title">{{this.name}}</h5>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">location:{{this.location}}</li>
+        <li class="list-group-item">date:{{this.date}}</li>
+        <li class="list-group-item">category:{{this.category}}</li>
+    </ul>
+</div>
+</div>
+</div>
+{{/each}}

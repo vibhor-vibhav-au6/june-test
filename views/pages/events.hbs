@@ -1,0 +1,22 @@
+<h2>Browse through All the Events!</h2>
+{{#each data}}
+<div class="card">
+<div class="card-header">
+<div class="card-body">
+    <h5 class="card-title">{{this.name}}</h5>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">location:{{this.location}}</li>
+        <li class="list-group-item">date:{{this.date}}</li>
+        <li class="list-group-item">category:{{this.category}}</li>
+    </ul>
+    <form action="/eventdetails/{{this._id}}" method="GET">
+    <button type="submit" class="btn btn-warning">View more details</button>
+    </form>
+    <br>
+    <form action="/buyevent/{{this._id}}" method="GET">
+    <button type="submit" class="btn btn-warning">Buy Now @ {{this.price}}</button>
+    </form>
+</div>
+</div>
+</div>
+{{/each}}
