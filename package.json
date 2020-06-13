@@ -8,7 +8,7 @@
     "start": "node server.js",
     "dev": "nodemon server.js"
   },
-  "author": "anurag gothi",
+  "author": "vibhor vibhav",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^4.0.1",
