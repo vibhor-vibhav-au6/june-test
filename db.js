@@ -1,6 +1,7 @@
 const mongoose = require('mongoose')
 
-mongoose.connect('mongodb://127.0.0.1:27017/book-my-events' || process.env.MONGODB_URL ,{
+var maongo_url = "mongodb+srv://vibhor:1234@cluster0-5j4d2.mongodb.net/book-my-events?retryWrites=true&w=majority"
+mongoose.connect(maongo_url ,{
     useUnifiedTopology:true,
     useNewUrlParser: true,
     useCreateIndex: true
